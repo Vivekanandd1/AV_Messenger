@@ -1,0 +1,134 @@
+Loading PSProperties from D:\AV_Messenger-master\productscience.properties
+Authenticating with PSTool
+PSTool token found in productscience.properties
+--> GET https://prod.productscience.app/api/v1/auth-check
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+--> END GET
+<-- 204 https://prod.productscience.app/api/v1/auth-check (1314ms)
+date: Mon, 18 Dec 2023 07:24:39 GMT
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+<-- END HTTP
+PSTool authentication success
+Retrieving configuration
+Probing PSLocation
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool config tag found, loading from 412575221:default
+Loading filters from spec
+Loading PSProperties from D:\AV_Messenger-master\productscience.properties
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+Found 1 filters
+No build logs uploaded
+PSLogs >> unfilter: CacheControl$Builder onlyIfCached fqnHash=1354008497 signatureHash=null
+GRADLE VERSION 7.4
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 8.2.0
+Registering ProductScience's ClassTransform
+Using new ScopedArtifacts transform API
+Using ProductScience Plugin version 0.18.4
+Retrieving application token
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+--> POST https://prod.productscience.app/api/v1/plugin/auth/project/412575221/app
+Content-Type: application/json; charset=UTF-8
+Content-Length: 50
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"buildId":"1d396341-e707-4e37-b963-d4294b0101ee"}
+--> END POST (50-byte body)
+<-- 200 https://prod.productscience.app/api/v1/plugin/auth/project/412575221/app (368ms)
+date: Mon, 18 Dec 2023 07:24:46 GMT
+content-type: application/json
+content-length: 102
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"token":"t05_49iHczWMvEwi3EJw5SoW1B6F1CFZbTlLYCZuovn_HNH7E-nzn3yMfYwZvA5b9urMhngMjEm3zlrPHeMERlsKaA"}
+<-- END HTTP (102-byte body)
+Application token successfully retrieved
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+Uploading status
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-status
+Content-Type: application/json; charset=UTF-8
+Content-Length: 99
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"status":"IN_PROGRESS","eventTime":1702884285903,"buildId":"1d396341-e707-4e37-b963-d4294b0101ee"}
+--> END POST (99-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-status (418ms)
+date: Mon, 18 Dec 2023 07:24:46 GMT
+content-type: application/json
+content-length: 114
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"buildId":"1d396341-e707-4e37-b963-d4294b0101ee","status":"IN_PROGRESS","dateUpdated":"2023-12-18T07:24:46.507Z"}
+<-- END HTTP (114-byte body)
+Status uploaded
+Added dependency DefaultExternalModuleDependency{group='com.productscience.transformer', name='transformer-module', version='0.18.4', configuration='default'}
+Incompatible frameCounter dependency version 5.6.0 found, replacing with version 6.0.0
+Added dependency DefaultExternalModuleDependency{group='com.productscience.androidutil', name='framecounter', version='6.0.0', configuration='default'}
+Incompatible userSession dependency version 5.6.0 found, replacing with version 6.0.0
+Adding missing userSession dependencies block
+Added dependency DefaultExternalModuleDependency{group='com.productscience.androidutil', name='usersession', version='6.0.0', configuration='default'}
+Added dependency DefaultExternalModuleDependency{group='androidx.lifecycle', name='lifecycle-process', version='2.5.1', configuration='default'}
+Uploading build log
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-log
+Content-Type: application/json; charset=UTF-8
+Content-Length: 692
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"events":[{"name":"pluginAuthenticated","eventTime":1702884278908,"buildId":"1d396341-e707-4e37-b963-d4294b0101ee"},{"name":"numberOfFilters","value":"1","eventTime":1702884283408,"buildId":"1d396341-e707-4e37-b963-d4294b0101ee"},{"name":"pluginApplied","value":"{\"pluginVersion\":\"0.18.4\"}","eventTime":1702884285442,"buildId":"1d396341-e707-4e37-b963-d4294b0101ee"},{"name":"pluginConfigured","eventTime":1702884285847,"buildId":"1d396341-e707-4e37-b963-d4294b0101ee"},{"name":"pluginConfigured","eventTime":1702884285848,"buildId":"1d396341-e707-4e37-b963-d4294b0101ee"},{"name":"pluginDependenciesResolved","eventTime":1702884286390,"buildId":"1d396341-e707-4e37-b963-d4294b0101ee"}]}
+--> END POST (692-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-log (1121ms)
+date: Mon, 18 Dec 2023 07:24:47 GMT
+content-type: application/json
+content-length: 2
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{}
+<-- END HTTP (2-byte body)
+Build log uploaded
+Uploading build log
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-log
+Content-Type: application/json; charset=UTF-8
+Content-Length: 397
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"events":[{"name":"buildError","value":"{\"buildErrorMessage\":\"\\u0027java.lang.String org.gradle.api.artifacts.component.BuildIdentifier.getBuildPath()\\u0027\",\"buildErrorCauses\":[\"java.lang.NoSuchMethodError: \\u0027java.lang.String org.gradle.api.artifacts.component.BuildIdentifier.getBuildPath()\\u0027\"]}","eventTime":1702884339180,"buildId":"1d396341-e707-4e37-b963-d4294b0101ee"}]}
+--> END POST (397-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-log (525ms)
+date: Mon, 18 Dec 2023 07:25:39 GMT
+content-type: application/json
+content-length: 2
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{}
+<-- END HTTP (2-byte body)
+Build log uploaded
+Uploading status
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-status
+Content-Type: application/json; charset=UTF-8
+Content-Length: 191
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"status":"FAILED","eventTime":1702884339718,"buildId":"1d396341-e707-4e37-b963-d4294b0101ee","message":"'java.lang.String org.gradle.api.artifacts.component.BuildIdentifier.getBuildPath()'"}
+--> END POST (191-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-status (816ms)
+date: Mon, 18 Dec 2023 07:25:40 GMT
+content-type: application/json
+content-length: 109
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"buildId":"1d396341-e707-4e37-b963-d4294b0101ee","status":"FAILED","dateUpdated":"2023-12-18T07:25:40.368Z"}
+<-- END HTTP (109-byte body)
+Status uploaded

@@ -1,0 +1,138 @@
+Loading PSProperties from D:\AV_Messenger-master\productscience.properties
+Authenticating with PSTool
+PSTool token found in productscience.properties
+--> GET https://prod.productscience.app/api/v1/auth-check
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+--> END GET
+<-- 204 https://prod.productscience.app/api/v1/auth-check (2013ms)
+date: Fri, 15 Dec 2023 15:40:47 GMT
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+<-- END HTTP
+PSTool authentication success
+Retrieving configuration
+Probing PSLocation
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool config tag found, loading from 412575221:default
+Loading filters from spec
+Loading PSProperties from D:\AV_Messenger-master\productscience.properties
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+Found 1 filters
+No build logs uploaded
+PSLogs >> unfilter: CacheControl$Builder onlyIfCached fqnHash=1354008497 signatureHash=null
+GRADLE VERSION 7.4
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 7.3.1
+Registering ProductScience's ClassTransform
+Using Transform API
+Empty or missing productScience block. Applying plugin for variant debug
+Empty or missing productScience block. Applying plugin for variant release
+Empty or missing productScience block. Applying plugin for variant debugAndroidTest
+Using ProductScience Plugin version 0.18.4
+Cleaning D:\AV_Messenger-master\app\build\intermediates\transforms\ClassTransform
+Retrieving application token
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+--> POST https://prod.productscience.app/api/v1/plugin/auth/project/412575221/app
+Content-Type: application/json; charset=UTF-8
+Content-Length: 50
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df"}
+--> END POST (50-byte body)
+<-- 200 https://prod.productscience.app/api/v1/plugin/auth/project/412575221/app (388ms)
+date: Fri, 15 Dec 2023 15:40:53 GMT
+content-type: application/json
+content-length: 102
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"token":"t05_pvcUgkSU1DGYNtxixQUWoR2EtYFcsdZm5qISVXd1sMJFGpao1qh4WPRncVTj3QTDNJy5un2RuHpwpWtACdOYfA"}
+<-- END HTTP (102-byte body)
+Application token successfully retrieved
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+Uploading status
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-status
+Content-Type: application/json; charset=UTF-8
+Content-Length: 99
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"status":"IN_PROGRESS","eventTime":1702654852486,"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df"}
+--> END POST (99-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-status (395ms)
+date: Fri, 15 Dec 2023 15:40:54 GMT
+content-type: application/json
+content-length: 114
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df","status":"IN_PROGRESS","dateUpdated":"2023-12-15T15:40:54.076Z"}
+<-- END HTTP (114-byte body)
+Status uploaded
+Added dependency DefaultExternalModuleDependency{group='com.productscience.transformer', name='transformer-module', version='0.18.4', configuration='default'}
+Incompatible frameCounter dependency version 5.6.0 found, replacing with version 6.0.0
+Added dependency DefaultExternalModuleDependency{group='com.productscience.androidutil', name='framecounter', version='6.0.0', configuration='default'}
+Incompatible userSession dependency version 5.6.0 found, replacing with version 6.0.0
+Adding missing userSession dependencies block
+Added dependency DefaultExternalModuleDependency{group='com.productscience.androidutil', name='usersession', version='6.0.0', configuration='default'}
+Added dependency DefaultExternalModuleDependency{group='androidx.lifecycle', name='lifecycle-process', version='2.5.1', configuration='default'}
+Uploading build log
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-log
+Content-Type: application/json; charset=UTF-8
+Content-Length: 589
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"events":[{"name":"pluginAuthenticated","eventTime":1702654846058,"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df"},{"name":"numberOfFilters","value":"1","eventTime":1702654851702,"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df"},{"name":"pluginApplied","value":"{\"pluginVersion\":\"0.18.4\"}","eventTime":1702654851981,"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df"},{"name":"pluginConfigured","eventTime":1702654852424,"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df"},{"name":"pluginDependenciesResolved","eventTime":1702654852932,"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df"}]}
+--> END POST (589-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-log (1020ms)
+date: Fri, 15 Dec 2023 15:40:55 GMT
+content-type: application/json
+content-length: 2
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{}
+<-- END HTTP (2-byte body)
+Build log uploaded
+Uploading build log
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-log
+Content-Type: application/json; charset=UTF-8
+Content-Length: 111
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"events":[{"name":"buildSuccess","eventTime":1702654867042,"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df"}]}
+--> END POST (111-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-log (422ms)
+date: Fri, 15 Dec 2023 15:41:08 GMT
+content-type: application/json
+content-length: 2
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{}
+<-- END HTTP (2-byte body)
+Build log uploaded
+Uploading status
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-status
+Content-Type: application/json; charset=UTF-8
+Content-Length: 95
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"status":"SUCCESS","eventTime":1702654867479,"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df"}
+--> END POST (95-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-status (501ms)
+date: Fri, 15 Dec 2023 15:41:09 GMT
+content-type: application/json
+content-length: 110
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"buildId":"a811e38d-a3ca-445e-bdf5-8c8b673db3df","status":"SUCCESS","dateUpdated":"2023-12-15T15:41:09.062Z"}
+<-- END HTTP (110-byte body)
+Status uploaded

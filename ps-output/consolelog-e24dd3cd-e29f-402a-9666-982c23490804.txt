@@ -1,0 +1,8 @@
+Found 1 filters
+
+GRADLE VERSION 7.4
+
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 7.3.1
+
+Using Transform API
+

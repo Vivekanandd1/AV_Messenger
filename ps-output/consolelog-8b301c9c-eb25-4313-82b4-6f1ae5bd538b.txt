@@ -1,0 +1,88 @@
+Found 1 filters
+
+GRADLE VERSION 7.4
+
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 7.3.1
+
+Using Transform API
+
+AGPBI: {"kind":"warning","text":"API 'android.registerTransform' is obsolete.\nIt will be removed in version 8.0 of the Android Gradle plugin.\nThe Transform API is removed to improve build performance. Projects that use the\nTransform API force the Android Gradle plugin to use a less optimized flow for the\nbuild that can result in large regressions in build times. It’s also difficult to\nuse the Transform API and combine it with other Gradle features; the replacement\nAPIs aim to make it easier to extend the build without introducing performance or\ncorrectness issues.\n\nThere is no single replacement for the Transform API—there are new, targeted\nAPIs for each use case. All the replacement APIs are in the\n`androidComponents {}` block.\n\nThe Transform API uses incremental APIs deprecated since Gradle 7.5. Please add\n`android.experimental.legacyTransform.forceNonIncremental=true` to\n`gradle.properties` to fix this issue. Note that this will run transforms\nnon-incrementally and may have a build performance impact.\nFor more information, see https://developer.android.com/studio/releases/gradle-plugin-api-updates#transform-api.\nTo determine what is calling android.registerTransform, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.","sources":[{}]}
+
+:app:processDebugManifestForPackage
+
+:app:mergeDebugShaders 
+
+UP-TO-DATE
+
+:app:compileDebugShaders 
+
+NO-SOURCE
+
+:app:generateDebugAssets 
+
+UP-TO-DATE
+
+:app:mergeDebugAssets 
+
+UP-TO-DATE
+
+:app:compressDebugAssets 
+
+UP-TO-DATE
+
+:app:processDebugJavaRes 
+
+NO-SOURCE
+
+:app:mergeDebugJavaResource 
+
+UP-TO-DATE
+
+:app:checkDebugDuplicateClasses 
+
+UP-TO-DATE
+
+:app:mergeDebugJniLibFolders 
+
+UP-TO-DATE
+
+:app:mergeDebugNativeLibs 
+
+NO-SOURCE
+
+:app:stripDebugDebugSymbols 
+
+NO-SOURCE
+
+:app:validateSigningDebug 
+
+UP-TO-DATE
+
+:app:writeDebugAppMetadata 
+
+UP-TO-DATE
+
+:app:compileDebugJavaWithJavac
+
+Note: Some input files use or override a deprecated API.
+
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:transformClassesWithClassTransformForDebug
+
+ClassTransform starting
+
+Analyzing platform classes
+
+SDK version: android-33
+
+Trying SDK directory: C:\Users\Admin\AppData\Local\Android\Sdk
+
+Found android.jar in C:\Users\Admin\AppData\Local\Android\Sdk\platforms\android-33\android.jar
+
+Analyzed 5280 platform classes
+
+PSLogs: pinned for TaskImpl: kotlinx/coroutines/scheduling/CoroutineScheduler::createTask(Ljava/lang/Runnable;Lkotlinx/coroutines/scheduling/TaskContext;)Lkotlinx/coroutines/scheduling/Task;
+
+ClassTransform took 40398 ms
+

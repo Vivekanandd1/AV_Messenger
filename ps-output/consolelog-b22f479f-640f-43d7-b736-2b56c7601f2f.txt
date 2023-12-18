@@ -1,0 +1,135 @@
+Found 1 filters
+
+GRADLE VERSION 7.4
+
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 7.3.1
+
+Using Transform API
+
+WARNING:API 'android.registerTransform' is obsolete.
+
+
+
+
+It will be removed in version 8.0 of the Android Gradle plugin.
+
+
+
+
+The Transform API is removed to improve build performance. Projects that use the
+
+
+
+
+Transform API force the Android Gradle plugin to use a less optimized flow for the
+
+
+
+
+build that can result in large regressions in build times. It’s also difficult to
+
+
+
+
+use the Transform API and combine it with other Gradle features; the replacement
+
+
+
+
+APIs aim to make it easier to extend the build without introducing performance or
+
+
+
+
+correctness issues.
+
+
+
+
+
+
+
+There is no single replacement for the Transform API—there are new, targeted
+
+
+
+
+APIs for each use case. All the replacement APIs are in the
+
+
+
+
+`androidComponents {}` block.
+
+
+
+
+
+
+
+The Transform API uses incremental APIs deprecated since Gradle 7.5. Please add
+
+
+
+
+`android.experimental.legacyTransform.forceNonIncremental=true` to
+
+
+
+
+`gradle.properties` to fix this issue. Note that this will run transforms
+
+
+
+
+non-incrementally and may have a build performance impact.
+
+
+
+
+For more information, see https://developer.android.com/studio/releases/gradle-plugin-api-updates#transform-api.
+
+
+
+
+To determine what is calling android.registerTransform, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+:app:processDebugMainManifest
+
+D:\AV_Messenger-master\app\src\main\AndroidManifest.xml:5:5-44 Warning:
+
+
+
+
+	uses-sdk:minSdkVersion value (21) specified in the manifest file is ignored. It is overridden by the value declared in the DSL or the variant API, or 1 if not declared/present. Current value is (16).
+
+D:\AV_Messenger-master\app\src\main\AndroidManifest.xml:5:5-44 Error:
+
+
+
+
+	uses-sdk:minSdkVersion 16 cannot be smaller than version 21 declared in library [com.productscience.transformer:transformer-module:0.18.4] C:\Users\Admin\.gradle\caches\transforms-3\c071b61398cc663fd657b38842787959\transformed\transformer-module-0.18.4\AndroidManifest.xml as the library might be using APIs not available in 16
+
+
+
+
+	Suggestion: use a compatible library with a minSdk of at most 16,
+
+
+
+
+		or increase this project's minSdk version to at least 21,
+
+
+
+
+		or use tools:overrideLibrary="com.productscience.transformer.module" to force usage (may lead to runtime failures)
+
+
+
+
+See http://g.co/androidstudio/manifest-merger for more information about the manifest merger.
+
+
+
+

@@ -1,0 +1,138 @@
+Loading PSProperties from D:\AV_Messenger-master\productscience.properties
+Authenticating with PSTool
+PSTool token found in productscience.properties
+--> GET https://prod.productscience.app/api/v1/auth-check
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+--> END GET
+<-- 204 https://prod.productscience.app/api/v1/auth-check (613ms)
+date: Fri, 15 Dec 2023 15:46:15 GMT
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+<-- END HTTP
+PSTool authentication success
+Retrieving configuration
+Probing PSLocation
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool config tag found, loading from 412575221:default
+Loading filters from spec
+Loading PSProperties from D:\AV_Messenger-master\productscience.properties
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+Found 1 filters
+No build logs uploaded
+PSLogs >> unfilter: CacheControl$Builder onlyIfCached fqnHash=1354008497 signatureHash=null
+GRADLE VERSION 7.4
+ANDROID GRADLE PLUGIN VERSION Android Gradle Plugin version 7.3.1
+Registering ProductScience's ClassTransform
+Using Transform API
+Empty or missing productScience block. Applying plugin for variant debug
+Empty or missing productScience block. Applying plugin for variant release
+Empty or missing productScience block. Applying plugin for variant debugAndroidTest
+Using ProductScience Plugin version 0.18.4
+Cleaning D:\AV_Messenger-master\app\build\intermediates\transforms\ClassTransform
+Retrieving application token
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+--> POST https://prod.productscience.app/api/v1/plugin/auth/project/412575221/app
+Content-Type: application/json; charset=UTF-8
+Content-Length: 50
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb"}
+--> END POST (50-byte body)
+<-- 200 https://prod.productscience.app/api/v1/plugin/auth/project/412575221/app (359ms)
+date: Fri, 15 Dec 2023 15:46:20 GMT
+content-type: application/json
+content-length: 102
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"token":"t05_OniTrFO2hBTHLbQMLofGhKEX61RdS0OgndSjBV7usdAFJJHitd2zX_EuKQ2A97FyPUTAqjDw4XEiW-VjETGOjQ"}
+<-- END HTTP (102-byte body)
+Application token successfully retrieved
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+PSTool token found in productscience.properties
+PSTool config tag found in productscience.properties file
+Uploading status
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-status
+Content-Type: application/json; charset=UTF-8
+Content-Length: 99
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"status":"IN_PROGRESS","eventTime":1702655178889,"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb"}
+--> END POST (99-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-status (354ms)
+date: Fri, 15 Dec 2023 15:46:20 GMT
+content-type: application/json
+content-length: 114
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb","status":"IN_PROGRESS","dateUpdated":"2023-12-15T15:46:20.488Z"}
+<-- END HTTP (114-byte body)
+Status uploaded
+Added dependency DefaultExternalModuleDependency{group='com.productscience.transformer', name='transformer-module', version='0.18.4', configuration='default'}
+Incompatible frameCounter dependency version 5.6.0 found, replacing with version 6.0.0
+Added dependency DefaultExternalModuleDependency{group='com.productscience.androidutil', name='framecounter', version='6.0.0', configuration='default'}
+Incompatible userSession dependency version 5.6.0 found, replacing with version 6.0.0
+Adding missing userSession dependencies block
+Added dependency DefaultExternalModuleDependency{group='com.productscience.androidutil', name='usersession', version='6.0.0', configuration='default'}
+Added dependency DefaultExternalModuleDependency{group='androidx.lifecycle', name='lifecycle-process', version='2.5.1', configuration='default'}
+Uploading build log
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-log
+Content-Type: application/json; charset=UTF-8
+Content-Length: 589
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"events":[{"name":"pluginAuthenticated","eventTime":1702655174547,"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb"},{"name":"numberOfFilters","value":"1","eventTime":1702655178348,"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb"},{"name":"pluginApplied","value":"{\"pluginVersion\":\"0.18.4\"}","eventTime":1702655178511,"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb"},{"name":"pluginConfigured","eventTime":1702655178882,"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb"},{"name":"pluginDependenciesResolved","eventTime":1702655179292,"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb"}]}
+--> END POST (589-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-log (1262ms)
+date: Fri, 15 Dec 2023 15:46:21 GMT
+content-type: application/json
+content-length: 2
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{}
+<-- END HTTP (2-byte body)
+Build log uploaded
+Uploading build log
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-log
+Content-Type: application/json; charset=UTF-8
+Content-Length: 1051
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"events":[{"name":"buildError","value":"{\"buildErrorMessage\":\"Execution failed for task \\u0027:app:processDebugMainManifest\\u0027.\",\"buildErrorCauses\":[\"org.gradle.api.tasks.TaskExecutionException: Execution failed for task \\u0027:app:processDebugMainManifest\\u0027.\",\"java.lang.RuntimeException: Manifest merger failed : uses-sdk:minSdkVersion 16 cannot be smaller than version 21 declared in library [com.productscience.transformer:transformer-module:0.18.4] C:\\\\Users\\\\Admin\\\\.gradle\\\\caches\\\\transforms-3\\\\c071b61398cc663fd657b38842787959\\\\transformed\\\\transformer-module-0.18.4\\\\AndroidManifest.xml as the library might be using APIs not available in 16\\n\\tSuggestion: use a compatible library with a minSdk of at most 16,\\n\\t\\tor increase this project\\u0027s minSdk version to at least 21,\\n\\t\\tor use tools:overrideLibrary\\u003d\\\"com.productscience.transformer.module\\\" to force usage (may lead to runtime failures)\"]}","eventTime":1702655181441,"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb"}]}
+--> END POST (1051-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-log (561ms)
+date: Fri, 15 Dec 2023 15:46:23 GMT
+content-type: application/json
+content-length: 2
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{}
+<-- END HTTP (2-byte body)
+Build log uploaded
+Uploading status
+--> POST https://prod.productscience.app/api/v1/projects/412575221/build-status
+Content-Type: application/json; charset=UTF-8
+Content-Length: 165
+Authorization: Bearer t04_0SA2Lk5ufeXFDIQWQ4aiPq-lDYS43RYVVWJv4cOMqKTbElWEOhP4QWjfUG2vswj8LDs5GYylRkHUA8wfSta5fg
+
+{"status":"FAILED","eventTime":1702655182027,"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb","message":"Execution failed for task ':app:processDebugMainManifest'."}
+--> END POST (165-byte body)
+<-- 200 https://prod.productscience.app/api/v1/projects/412575221/build-status (435ms)
+date: Fri, 15 Dec 2023 15:46:23 GMT
+content-type: application/json
+content-length: 109
+via: 1.1 google
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{"buildId":"737b2cd1-1ca5-4d55-a3f0-db06e3de0fbb","status":"FAILED","dateUpdated":"2023-12-15T15:46:23.608Z"}
+<-- END HTTP (109-byte body)
+Status uploaded

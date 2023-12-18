@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://artifactory.productscience.app/releases"
+        }
+    }
+    dependencies {
+        classpath "com.google.gms:google-services:4.4.0"
+        classpath "com.productscience.transformer:transformer-plugin:0.18.4"
+        classpath "com.productscience.transformer:transformer-instrumentation:0.18.4"
+        classpath "com.google.firebase:firebase-core:21.1.1"
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '8.2.0' apply false
+    id 'com.android.library' version '8.2.0' apply false
+}
